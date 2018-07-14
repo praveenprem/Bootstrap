@@ -1,5 +1,3 @@
-#!/bin/bash
-
 export LANGUAGE=en_UK.UTF-8
 export LANG=en_UK.UTF-8
 export LC_ALL=en_UK.UTF-8
