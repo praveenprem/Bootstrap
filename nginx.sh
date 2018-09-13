@@ -1,9 +1,7 @@
 
-export LANGUAGE=en_UK.UTF-8
-export LANG=en_UK.UTF-8
-export LC_ALL=en_UK.UTF-8
-locale-gen en_UK.UTF-8
-dpkg-reconfigure locales
+
+wget https://raw.githubusercontent.com/praveenprem/Bootstrap/master/ubuntu.sh -O - | bash
+
 apt-get -y update
 apt-get -y upgrade
 
