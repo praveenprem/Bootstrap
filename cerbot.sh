@@ -1,6 +1,4 @@
-apt-get update -y
-
-apt-get install software-properties-common -y
+wget https://raw.githubusercontent.com/praveenprem/Bootstrap/master/ubuntu.sh -O - | bash
 
 add-apt-repository ppa:certbot/certbot -y
 
