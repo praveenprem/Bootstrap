@@ -14,7 +14,7 @@ if [[ $install_cf == "yes" ]]; then
     apt install python3-pip -y
     pip install certbot-dns-cloudflare
 
-    IFS= read -p "Please enter the Cloudflare access token: " cf_token
+    IFS= read -sp "Please enter the Cloudflare access token: " cf_token
     if [[ $cf_token == "" ]]; then
         logger "Failed to configure Cloudflare DNS challange. No token"
     else
