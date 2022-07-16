@@ -20,7 +20,7 @@ if [[ $install_cf == "yes" ]]; then
     else
         logger "Saving credentials to ~/.secrets/certbot/cloudflare.ini"
         mkdir -p ~/.secrets/certbot/
-        echo $cf_token > ~/.secrets/certbot/cloudflare.ini
+        echo "dns_cloudflare_api_token = $cf_token" > ~/.secrets/certbot/cloudflare.ini
         chmod 600 ~/.secrets/certbot/cloudflare.ini
     fi
 fi
