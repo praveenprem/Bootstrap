@@ -1,8 +1,8 @@
 logger() {
-    echo "$(date '+%Y/%m/%d %H:%M:%S') certbot.sh: $1"
+    echo "$(date '+%Y/%m/%d %H:%M:%S') ubuntu.sh: $1"
 }
 
-logging "Updating sysytem"
+logger "Updating sysytem"
 
 apt-get -y update
 apt-get -y upgrade

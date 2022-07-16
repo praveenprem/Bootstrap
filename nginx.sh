@@ -1,5 +1,5 @@
 logger() {
-    echo "$(date '+%Y/%m/%d %H:%M:%S') certbot.sh: $1"
+    echo "$(date '+%Y/%m/%d %H:%M:%S') nginx.sh: $1"
 }
 
 wget https://raw.githubusercontent.com/praveenprem/Bootstrap/master/ubuntu.sh -O - | bash
