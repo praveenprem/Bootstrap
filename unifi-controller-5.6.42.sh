@@ -23,6 +23,7 @@ apt-get install -y binutils jsvc mongodb-org-server	openjdk-8-jre-headless wget 
 
 echo "**** install unifi ****"
 curl -o unifi.deb -L "http://dl.ubnt.com/unifi/${UNIFI_VERSION}/unifi_sysvinit_all.deb"
+sleep 3
 dpkg -i unifi.deb
 
 echo "Completed"
