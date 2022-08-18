@@ -21,7 +21,7 @@ apt-get update
 apt-get install -y binutils jsvc mongodb-org-server	openjdk-8-jre-headless wget curl
 
 echo "**** install unifi ****"
-UNIFI_VERSION=$(curl -sX GET "http://dl-origin.ubnt.com/unifi/debian/dists/${UNIFI_BRANCH}/ubiquiti/binary-amd64/Packages" | sed -n 's/^Version\:\ \(.*\)$/\1/p')
+UNIFI_VERSION=$(curl -sX GET "http://dl-origin.ubnt.com/unifi/debian/dists/${UNIFI_BRANCH}/ubiquiti/binary-amd64/Packages" | sed -n 's/^Version\:\ \(.*\)-.*$/\1/p')
 curl -o unifi.deb -L "http://dl.ubnt.com/unifi/${UNIFI_VERSION}/unifi_sysvinit_all.deb"
 dpkg -i unifi.deb
 
