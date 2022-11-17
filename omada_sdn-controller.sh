@@ -24,8 +24,8 @@ echo "**** Install packages ****"
 apt-get install -y binutils jsvc openjdk-8-jre-headless wget curl gnupg
 
 echo "**** Add mongo repository ****"
-apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14518585931BC711F9BA15703C6
-echo "deb [ arch=amd64,arm64 ] http://repo.mongodb.org/apt/ubuntu $VERSION_CODENAME/mongodb-org/3.6 multiverse" >> /etc/apt/sources.list.d/mongo.list
+apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 58712A2291FA4AD5
+echo "deb [ arch=amd64,arm64 ] http://repo.mongodb.org/apt/ubuntu $VERSION_CODENAME/mongodb-org/3.6 multiverse" > /etc/apt/sources.list.d/mongo-3.6.list
 
 echo "**** Install MongoDB ****"
 apt-get update 
