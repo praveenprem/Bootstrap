@@ -12,7 +12,7 @@ echo '                                                                          
 echo "Version: 5.6.3"
 
 apt update && apt upgrade -y
-apt install gnupg
+apt install gnupg -y
 
 echo "**** Add mongo repository ****"
 apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14518585931BC711F9BA15703C6
