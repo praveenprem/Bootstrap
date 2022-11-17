@@ -13,7 +13,7 @@ echo "Version: 5.6.3"
 
 source /etc/os-release
 
-if [ "$VERSION_CODENAME" != "xenial" ]; then
+if [ "$VERSION_CODENAME" != "bionic" ]; then
     echo "MongoDB version is NOT supported on $VERSION_CODENAME"
     exit 1
 fi
@@ -28,6 +28,7 @@ apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A145185
 echo "deb [ arch=amd64,arm64 ] http://repo.mongodb.org/apt/ubuntu $VERSION_CODENAME/mongodb-org/3.4 multiverse" >> /etc/apt/sources.list.d/mongo.list
 
 echo "**** Install MongoDB ****"
+apt-get update 
 apt-get install -y mongodb-org-server
 
 echo "**** Install Omada SDN Controller ****"
